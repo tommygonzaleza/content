@@ -23,13 +23,13 @@ Reversing a list is a very common operation in the day of a programmer, you will
 
 For these cases, Python has various methods and ways to "flip" or "reverse" a list. Let's see more information on these methods/ways in the following sections.
 
-- [How to Reverse a List in Python Using the **`.reverse()`** Method](#reverse)
-- [How to Reverse a List in Python Using the **`reversed()`** Function](#reversed)
-- [How to Reverse a List in Python Using the List Slicing Syntax](#slice)
+- [How to Reverse a List in Python Using the **`.reverse()`** Method](#how-to-reverse-a-list-in-python-using-the-reverse-method)
+- [How to Reverse a List in Python Using the **`reversed()`** Function](#how-to-reverse-a-list-in-python-using-the-reversed-function)
+- [How to Reverse a List in Python Using the List Slicing Syntax](#how-to-reverse-a-list-in-python-using-the-list-slicing-syntax)
 - [Summary](#summary)
 
 
-## How to Reverse a List in Python Using the **`.reverse()`** Method <a name="reverse"></a>
+## How to Reverse a List in Python Using the reverse Method
 
 Our first option to reverse a list in Python is the `.reverse()` built-in method. Every list object in Python has a method called reversed that you can call on any list object and it will reverse the list in place. This method does not create a new list, instead, the method modifies the original list. We can see another example of this method as follows:
 
@@ -42,7 +42,7 @@ print(mylist) #Output: [25, 24, 23, 22, 21, 20]
 
 As mentioned before, this method does not returns any values nor create a new list, it modifies our original list in place, and, as you can see, this method does not need any parameters, to reverse any list we just need to put the list name alongside the `.reverse()` method like this `listname.reverse()`
 
-## How to Reverse a List in Python Using the **`reversed()`** Function <a name="reversed"></a>
+## How to Reverse a List in Python Using the reversed Function
 
 The second option to reverse a list in Python is the `reversed()` built-in function. This option won't modify the original list nor will it create a copy of it, instead, it will return an iterator which we can use to loop through all the elements of the original list in order to move through the elements of the list in reverse. Basically, the `reversed()` built-in function will return a reverse iterator object. Let's see an example below:
 
@@ -65,7 +65,7 @@ print(mylist_reversed) #Output: [5, 4, 3, 2, 1]
 print(mylist) #Output: [1, 2, 3, 4, 5]
 ```
 
-## How to Reverse a List in Python Using the List Slicing Syntax <a name="slice"></a>
+## How to Reverse a List in Python Using the List Slicing Syntax
 
 The third option is to use the list slicing syntax. Python list objects have a feature called list slicing, unlike the first method (`.reverse()`), this option does not modify our original list, rather it creates a copy of it and returns this copy with the elements of the original list flipped or reversed. 
 
