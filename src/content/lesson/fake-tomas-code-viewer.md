@@ -3,36 +3,46 @@
 
 ## 1. Que pasa si el codeviewer no recibe nada?
 
-<codeviewer>
+```js runable="true"
 
-</codeviewer>
+```
 
 ## 2. Que pasa si recibe todas las tecnologias posibles?
 
-<codeviewer>
-```jsx
+```jsx runable="true"
     console.log('x');
 ```
-```python
+```python runable="true"
     print('x');
 ```
-```js
+```js runable="true"
 	console.log('a');
 ```
-```py
+```py runable="true"
     print('py');
 ```
-```html
+```html runable="true"
 	<div>Hello</div>
 ```
-</codeviewer>
 
 ## 3. Que pasa si el codigo es casi infinito?
 
-<codeviewer>
-```js
+```js runable="true"
   for(let i = 0; i < 1000000000; i++){
     console.log(i);
   }
 ```
-</codeviewer>
+
+## 4. Que pasa si pasas dos code runable con uno sin ser runable en el medio
+
+```js runable=true
+console.log("js");
+```
+
+```
+console.log(fd);
+```
+
+```py runable=true
+print("hea")
+```
